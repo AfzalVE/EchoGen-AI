@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: audio-ai-lab
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: ipykernel>=7.2.0
+Requires-Dist: langchain>=1.2.15
+Requires-Dist: numpy>=2.4.4
+Requires-Dist: openai>=2.31.0
+Requires-Dist: pydub>=0.25.1
+Requires-Dist: python-dotenv>=1.2.2
+Requires-Dist: requests>=2.33.1

@@ -1,0 +1,1 @@
+- [x] Update src/audio_merger.py with correct ffmpeg paths

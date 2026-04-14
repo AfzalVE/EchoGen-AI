@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/music_handler.py
+src/script_generator.py
+src/voice_generator.py
+src/audio_ai_lab.egg-info/PKG-INFO
+src/audio_ai_lab.egg-info/SOURCES.txt
+src/audio_ai_lab.egg-info/dependency_links.txt
+src/audio_ai_lab.egg-info/requires.txt
+src/audio_ai_lab.egg-info/top_level.txt

@@ -1,0 +1,20 @@
+#enviroment variable 
+.env
+.venv
+__pycache__/
+#python bytecode
+*.pyc
+#log files
+*.log
+#database files
+*.db
+#IDE files
+.vscode/
+.idea/
+#macOS files
+.DS_Store
+#windows files
+Thumbs.db
+#other files
+*.bak
+*.tmp
