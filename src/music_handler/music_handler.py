@@ -7,7 +7,7 @@ def get_music_by_context(intent: str, mood: str) -> str:
     Select music dynamically from folder based on mood + intent
     """
 
-    project_root = os.path.dirname(os.path.dirname(__file__))
+    project_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
     base_path = os.path.join(project_root, "outputs", "music")
 
     # 🧠 Intent overrides mood (important)

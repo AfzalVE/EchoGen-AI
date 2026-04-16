@@ -10,8 +10,8 @@ API_KEY = os.getenv("ELEVENLABS_API_KEY")
 
 # 🎙️ Multiple voices (VERY IMPORTANT)
 VOICE_MAP = {
-    "narrator": "EXAVITQu4vr4xnSDxMaL",   # default voice
-    "customer": "TxGEqnHWrfWFTfGW9XjX"    # you can change later
+    "narrator": "2CijSvhnbyPuITmaQTGO",   # default voice
+    "customer": "3PS4IkJVlWmgwDrXKZsQ"    # you can change later
 }
 
 project_root = os.path.dirname(os.path.dirname(__file__))

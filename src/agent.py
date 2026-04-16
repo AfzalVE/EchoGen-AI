@@ -28,10 +28,25 @@ def build_dialogue(script: str):
 
     for i, line in enumerate(lines):
         line = line.strip()
+
         if not line:
             continue
 
-        speaker = "customer" if i % 2 == 0 else "narrator"
+        speaker = None
+
+        # 🎯 Detect speaker from text
+        if ":" in line:
+            parts = line.split(":", 1)
+            label = parts[0].lower().strip()
+            text = parts[1].strip()
+
+            if label in ["customer", "narrator"]:
+                speaker = label
+                line = text
+
+        # fallback if no label
+        if not speaker:
+            speaker = "customer" if i % 2 == 0 else "narrator"
 
         dialogue.append({
             "speaker": speaker,
