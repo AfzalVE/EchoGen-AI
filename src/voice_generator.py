@@ -8,26 +8,23 @@ load_dotenv()
 
 API_KEY = os.getenv("ELEVENLABS_API_KEY")
 
-# Replace with actual voice ID from ElevenLabs
-VOICE_ID = "EXAVITQu4vr4xnSDxMaL"
+# 🎙️ Multiple voices (VERY IMPORTANT)
+VOICE_MAP = {
+    "narrator": "EXAVITQu4vr4xnSDxMaL",   # default voice
+    "customer": "TxGEqnHWrfWFTfGW9XjX"    # you can change later
+}
 
 project_root = os.path.dirname(os.path.dirname(__file__))
 
 
-
-def generate_voice(text: str, filename: str = "voice.mp3") -> str:
+def generate_voice_segment(text: str, speaker: str, filename: str) -> str:
     """
-    Convert text to speech using ElevenLabs API.
-
-    Args:
-        text (str): Input text
-        filename (str): Output filename
-
-    Returns:
-        str: Path to saved audio file
+    Generate voice for a specific speaker
     """
 
-    url = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}"
+    voice_id = VOICE_MAP.get(speaker, VOICE_MAP["narrator"])
+
+    url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
 
     headers = {
         "xi-api-key": API_KEY,
@@ -52,6 +49,7 @@ def generate_voice(text: str, filename: str = "voice.mp3") -> str:
         output_path = os.path.join(project_root, 'outputs', 'voice', filename)
 
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
         with open(output_path, "wb") as f:
             f.write(response.content)
 
@@ -60,3 +58,8 @@ def generate_voice(text: str, filename: str = "voice.mp3") -> str:
     except Exception as e:
         print(f"[Voice Generator Error]: {e}")
         return ""
+
+
+# 🔁 Keep old function (backward compatibility)
+def generate_voice(text: str, filename: str = "voice.mp3") -> str:
+    return generate_voice_segment(text, "narrator", filename)

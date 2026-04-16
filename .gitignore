@@ -18,3 +18,4 @@ Thumbs.db
 #other files
 *.bak
 *.tmp
+uv.lock
