@@ -1,5 +1,5 @@
 
-# 🎧 SonicAgent AI
+# 🎧 EchoGen AI
 
 An intelligent AI-powered audio generation system that converts text into high-quality audio ads, stories, and podcasts with background music, voice synthesis, and smart dialogue structuring.
 
