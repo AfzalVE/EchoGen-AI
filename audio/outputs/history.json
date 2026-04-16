@@ -1,0 +1,44 @@
+[
+  {
+    "input": "create an ad for my ecommerce website shopsphere",
+    "error": "Voice generation failed",
+    "timestamp": "2026-04-16T16:17:03.343313"
+  },
+  {
+    "input": "create an ad for my ecommerce website shopsphere",
+    "error": "Voice generation failed",
+    "timestamp": "2026-04-16T16:19:51.265303"
+  },
+  {
+    "input": "create an ad for my ecommerce website shopsphere",
+    "intent": "ad",
+    "mood": "upbeat",
+    "script": "Voiceover: Welcome to Shopsphere, your one-stop shop for everything you love. Discover top brands, daily deals, and fast, free shipping. Shop now at Shopsphere.com and turn your wish list into wow moments.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "Voiceover: Welcome to Shopsphere, your one-stop shop for everything you love. Discover top brands, daily deals, and fast, free shipping. Shop now at Shopsphere.com and turn your wish list into wow moments."
+      }
+    ],
+    "segments": 1,
+    "voice_file": "voice/voice_20260416_162952_e4dbee.mp3",
+    "final_file": "final/final_20260416_162952_614b20.mp3",
+    "timestamp": "2026-04-16T16:30:10.624204"
+  },
+  {
+    "input": "create an ad for my ecommerce website stylehub",
+    "intent": "ad",
+    "mood": "upbeat",
+    "script": "Meet StyleHub—your ecommerce hub for curated fashion. Discover trending looks, effortless shopping, and fast checkout. From cart to closet in minutes. Ready to elevate your style? Visit StyleHub today and unlock looks that feel tailor-made for you.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "Meet StyleHub—your ecommerce hub for curated fashion. Discover trending looks, effortless shopping, and fast checkout. From cart to closet in minutes. Ready to elevate your style? Visit StyleHub today and unlock looks that feel tailor-made for you."
+      }
+    ],
+    "segments": 1,
+    "voice_file": "voice/voice_20260416_163124_29c002.mp3",
+    "final_file": "final/final_20260416_163124_2947ca.mp3",
+    "timestamp": "2026-04-16T16:31:41.161442"
+  }
+]

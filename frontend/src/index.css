@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+
+@import "@fontsource/sora/600.css";
+@import "@fontsource/sora/700.css";
+
+
+/* Base font */
+body {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.2px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Sora", sans-serif;
+  letter-spacing: -0.5px;
+}
+
+/* Keep everything consistent */
+p, a, span {
+  font-family: inherit;
+  font-weight: 400;
+}
