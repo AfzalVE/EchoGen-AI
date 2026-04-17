@@ -1,0 +1,77 @@
+/* Container for centering */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+
+/* The recessed track */
+.switch-track {
+  width: 140px;
+  height: 60px;
+  background-color: #111;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  box-shadow: 
+    inset 0 5px 10px rgba(0,0,0,0.8),
+    inset 0 -1px 2px rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+}
+
+/* The sliding handle */
+.switch-handle {
+  width: 70px;
+  height: 50px;
+  background: linear-gradient(145deg, #999, #444);
+  border-radius: 25px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+  box-shadow: 
+    5px 5px 15px rgba(0,0,0,0.6),
+    -1px -1px 2px rgba(255,255,255,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The circular thumb indent */
+.handle-indent {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #444, #888);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* "On" State Logic */
+.switch-track.on .switch-handle {
+  transform: translateX(60px);
+  background: linear-gradient(145deg, #ccc, #777); /* Lightens when on */
+}
+
+/* The Orange Glow */
+.switch-track.on::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 30px;
+  background: #ff6a00;
+  border-radius: 20px;
+  filter: blur(10px);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+/* Hide glow when off */
+.switch-track:not(.on)::before {
+  opacity: 0;
+}
