@@ -23,7 +23,7 @@ export function Sidebar() {
             className="h-12 w-12 object-cover"
           />
           <h1 className="text-lg font-bold leading-none bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">
-            EcoGen AI
+            EchoGen AI
           </h1>
         </div>
 
@@ -51,7 +51,7 @@ export function Sidebar() {
               className="h-14 w-14 object-contain -mr-1"
             />
             <h1 className="text-2xl font-bold leading-none bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">
-              EcoGen AI
+              EchoGen AI
             </h1>
           </div>
 
